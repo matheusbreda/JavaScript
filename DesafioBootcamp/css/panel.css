@@ -1,0 +1,204 @@
+:root {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+ }
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;        
+}
+nav {
+    width: 20%;
+    height: 100vh;
+    border-right: 1px solid #CFD8DC;
+}
+#panel {
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    align-items:baseline;
+    justify-content: center;
+
+}
+#listMenu{
+    list-style: none;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
+#listMenu li.itemMenu {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    margin-bottom: 5px;
+}
+#listMenu li.itemMenu span{
+    margin-right: 10px;
+}
+#listMenu li.itemMenu {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+#listMenu li.itemMenu {
+    cursor: pointer;
+}
+.labelForm, .boxTxt{
+width: 100%;
+}
+
+.boxTxt {
+padding: 5px;
+margin:2px 0 5px 0;
+font-size:18px;
+font-weight: bold;
+}
+
+.formGeral {
+width: 400px;
+height: auto;
+padding: 20px;
+border:1px solid #B0BEC5;
+margin-top: 20px;
+}
+
+.formGeral#pedidos {
+width: 800px;
+height: auto;
+}
+
+#displayBtn {
+width: 100%;
+margin-top:5px;
+display: flex;
+justify-content: space-between;
+}
+.rowDisplay {
+width: 50%;
+height: auto;
+display: flex;
+gap:5px;
+}
+.startEnd {
+ justify-content: flex-end;
+} 
+
+.btn {
+ border:none;
+ cursor:pointer;
+ border-radius: 5px;
+}
+
+.btnCtrlAction {
+width: 120px;
+height: auto;
+padding: 5px;
+}
+.btnNovo{background-color: #1976D2; color:#fff;}
+.btnSalvar{background-color: #2E7D32; color:#fff;}
+.btnMovDados{
+width: 50px; 
+background-color: #673AB7; color:#fff;
+font-weight: bold;
+}
+
+.abrir{
+ display: block;
+}
+.fechar{
+display: none; 
+}
+
+.titulo {
+ width: 100%;
+ height: auto;
+ display: flex;
+ justify-content: space-between;
+ margin-bottom: 30px;    
+ font-size: 18px;
+ font-weight: bold;
+
+}
+
+.descricaoTitulo {
+text-decoration: underline;
+}
+
+.fecharJanCliente, .fecharJanProduto, .fecharJanPedido{
+ color:#D32F2F;
+ display: flex;
+ justify-content: center;
+ align-items: center;  
+ text-decoration: none;
+ padding: 3px;   
+ font-size: 18px;
+ cursor:pointer;
+}
+.itensPedido{
+width: 100%;
+display: flex;
+background-color: #CFD8DC;
+padding: 3px;
+gap:5px;
+}
+
+.itensPedido .itensBox {
+padding: 5px;
+margin:2px 0 5px 0;
+font-size:18px;
+}
+.tituloItensPedido {
+width: 100%;
+height: auto;
+font-size: 16px;    
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+padding: 2px;
+margin-top:10px;
+font-weight: bold;
+color:#283593;
+border-top:1px solid #263238;
+}
+
+.ContenttabelaItens{
+width: 100%;
+height: auto;
+padding: 2;
+margin-top:5px;
+}
+.ContenttabelaItens .tabelaItensPedido{
+width: 100%;
+} 
+
+.tabelaItensPedido tr td.tituloItens{
+font-weight: bold;
+}
+
+.excluirItem:hover {
+color:#D32F2F;
+}
+
+#total{
+width: 100%;
+height: auto;
+display: flex;
+justify-content: flex-end;
+}
+#valorTotal{
+font-size: 18px;
+color:#D32F2F;
+background-color: #B0BEC5;
+padding: 3px;    
+}
+
+
+
+
+
+

@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+ :root {
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     --colorDefault: #fff;
+ }    
+ main {
+     width: 100vw;
+     height: 100vh;   
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ #formUser {
+     width: 300px;
+     height: auto;
+     border:1px solid #9E9E9E;
+     padding: 10px;
+ }
+ .labelForm, .boxTxt{
+     width: 100%;
+ }
+ 
+ .boxTxt {
+     padding: 5px;
+     margin:2px 0 5px 0;
+ }
+ 
+ .btn {
+     width: 100%;
+     height: 50px;
+     border:none;
+     border-radius: 2px;
+     background-color: #42A5F5;
+     cursor: pointer;
+     font-size: 16px;
+ }
+ 
+ .colorBtnPass {
+     color: var(--colorDefault)
+ }
+ 
+ .mostrarJanela {
+     display:block ;    
+ }
+ 
+ .fechar{
+     display: none;
+ }
+
+
+
+ 

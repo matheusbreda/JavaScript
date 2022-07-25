@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script type="module" src="js/panel.js"></script>
+    <link rel="stylesheet" href="css/panel.css">
+    <title>Painel - Projeto2 </title>
+</head>
+<body>
+   <main>
+    <nav>
+        <ul id="listMenu">
+            <li class="itemMenu" data-janela="clientes">
+                <span class="material-symbols-outlined">
+                    group_add</span>
+                    Clientes
+            </li>
+            <li class="itemMenu" data-janela="produtos">
+                <span class="material-symbols-outlined">
+                    redeem
+                    </span>
+                    Produtos
+            </li>
+            <li class="itemMenu" data-janela="pedidos" >
+                <span class="material-symbols-outlined">
+                    shopping_cart
+                    </span> Pedidos
+            </li>
+        </ul>
+    </nav>
+    <div id="panel">
+        <div class="formGeral fechar" id="clientes" data-status="close">
+            <form id="frmClientes" name="frmClientes" action="">
+                <div class="titulo">
+                    <span class="descricaoTitulo">Clientes</span>
+                     <div class="fecharJanCliente">x</div>
+                </div>
+                <label for="codCliente">Código
+                    <input disabled="disabled" type="text" id="codCliente" class="boxTxt" value="">  
+                </label>
+                <label for="nomeCliente">Nome
+                    <input type="text" id="nomeCliente" class="boxTxt" value="">  
+                </label>
+                <label for="dataCadatro">Data Cadastro
+                    <input type="text" id="dataCadCli" class="boxTxt" value="">  
+                </label>
+                <div id="displayBtn">
+                    <div class="rowDisplay">
+                        <input class="btn btnMovDados" id="antCli" type="button"  value="<">
+                        <input class="btn btnMovDados" id="proxCli" type="button"  value=">">
+                    </div>
+                    <div class="rowDisplay startEnd">
+                        <input class="btn btnCtrlAction btnNovo" id="novoCli" type="button"   value="Novo">
+                        <input class="btn btnCtrlAction btnSalvar" id="salvarCli" type="button" value="Salvar">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="formGeral fechar" id="produtos" data-status="close">
+            <form id="frmProdutos" action="">
+                <div class="titulo">
+                    <span class="descricaoTitulo">Produtos</span>
+                    <div class="fecharJanProduto">x</div>
+                </div>
+                <label for="codProduto">Código
+                    <input disabled="disabled" type="text" id="codProduto" class="boxTxt" value="">  
+                </label>
+                <label for="descProduto">Descrição
+                    <input type="text" id="descProduto" class="boxTxt" value="">  
+                </label>
+                <label for="dataCadProduto">Preço
+                    <input type="text" id="precoProduto" class="boxTxt" value="">  
+                </label>
+                <label for="qtdEstoqueProd">Quantidade
+                    <input type="text" id="qtdEstoqueProd" class="boxTxt" value="">  
+                </label>
+                <div id="displayBtn">
+                    <div class="rowDisplay">
+                        <input class="btn btnMovDados" id="antProd" type="button" value="<">
+                        <input class="btn btnMovDados" id="proxProd" type="button" value=">">
+                    </div>
+                    <div class="rowDisplay startEnd">
+                        <input class="btn btnCtrlAction btnNovo" id="novoProd" type="button" value="Novo">
+                        <input class="btn btnCtrlAction btnSalvar" id="salvarProd" type="button" value="Salvar">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="formGeral fechar" id="pedidos" data-status="close">
+            <form id="frmPedidos" action="">
+                <div class="titulo">
+                    <span class="descricaoTitulo">Pedidos</span>
+                     <div class="fecharJanPedido">x</div>
+                </div>
+                <!-- <label for="codPedido">Código do Pedido
+                    <input disabled="disabled" type="text" id="codPedido" class="boxTxt" value="">  
+                </label> -->
+                <label for="codCliPedido">Código do Cliente
+                    <input type="text" id="codCliPedido" class="boxTxt" value="">  
+                </label>
+                <label for="nomeCliPedido">Cliente
+                    <input type="text" disabled="disabled" id="nomeCliPedido" class="boxTxt" value="">  
+                </label>
+                <div class="tituloItensPedido">
+                     Localizar produto
+                </div>
+                <div id="displayBtn">              
+                    <div class="itensPedido">
+                        <input style="width: 50px;" class="itensBox" type="text" id="iCodProduto" value="">
+                        <input class="itensBox" disabled="disabled" type="text" id="iDecProduto" value="">
+                        <input style="width: 100px;" disabled="disabled" class="itensBox" type="text" id="iPrecoProduto" value="">
+                        <input style="width: 100px;" class="itensBox" type="text" id="iQtdProduto" value="">
+                        <input style="width: 100%;"class="itensBox" type="button" id="lancarItemPedido" value="Lançar no Pedido">
+                    </div>
+                    <!-- <div class="rowDisplay">
+                        <input class="btn btnMovDados" type="button"  value="<">
+                        <input class="btn btnMovDados" type="button"  value=">">
+                    </div> -->
+                    <!--
+                    <div class="rowDisplay startEnd">
+                        <input class="btn btnCtrlAction btnNovo" id="novoPedido" type="button"   value="Novo">
+                        <input class="btn btnCtrlAction btnSalvar" id="novoPedido" type="button" value="Salvar">
+                    </div>
+                    -->
+ 
+                </div>
+                <div class="tituloItensPedido">
+                    Itens do Pedido
+                </div>   
+            </form>
+            <div class="ContenttabelaItens">
+                <table class="tabelaItensPedido">
+                    <tr>
+                      <td class="tituloItens">Item</td>
+                      <td class="tituloItens">Descrição</td> 
+                      <td class="tituloItens">Preço</td>  
+                      <td class="tituloItens">Qtd</td> 
+                      <td class="tituloItens">Sub Total</td>
+                      <!-- <td class="tituloItens">Ação</td> -->
+                    </tr>
+
+                </table>
+            </div>
+            <div id="total">
+                <div id="valorTotal">
+
+                </div>
+            </div>
+        </div>
+    
+    </div>
+   </main> 
+</body>
+<!--
+    <span class="material-symbols-outlined">
+delete
+</span>
+-->
+</html>
